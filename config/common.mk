@@ -112,6 +112,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AudioFX \
     CMSettingsProvider \
+    CustomTiles \
     ExactCalculator \
     LiveLockScreenService \
     LockClock \
