@@ -1,6 +1,6 @@
-# Inherit common CM stuff
-$(call inherit-product, vendor/cm/config/common_mini.mk)
+# Inherit common OneUI stuff
+$(call inherit-product, vendor/OneUI/config/common_mini.mk)
 
-# Required CM packages
+# Required OneUI packages
 PRODUCT_PACKAGES += \
     LatinIME

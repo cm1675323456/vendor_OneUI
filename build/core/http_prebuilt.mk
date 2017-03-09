@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2015 The OneUI Project
 #           (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ ifeq ($(strip $(LOCAL_HTTP_MD5SUM)),)
   $(error LOCAL_HTTP_MD5SUM not defined.)
 endif
 
-PREBUILT_MODULE_ARCHIVE := vendor/cm/prebuilt/archive/$(LOCAL_MODULE)
+PREBUILT_MODULE_ARCHIVE := vendor/OneUI/prebuilt/archive/$(LOCAL_MODULE)
 
 PREBUILT_MODULE_FILE := $(PREBUILT_MODULE_ARCHIVE)/$(LOCAL_HTTP_FILENAME)
 
@@ -64,7 +64,7 @@ endef
 # $(1) url
 # $(2) file output
 define download-prebuilt-module
-  ./vendor/cm/build/tasks/http_curl_prebuilt.sh $(1) $(2);
+  ./vendor/OneUI/build/tasks/http_curl_prebuilt.sh $(1) $(2);
 endef
 
 define cleanup

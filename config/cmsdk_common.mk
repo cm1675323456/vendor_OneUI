@@ -1,24 +1,24 @@
 # Permissions for cmsdk services
 PRODUCT_COPY_FILES += \
-    vendor/cm/config/permissions/org.cyanogenmod.appsuggest.xml:system/etc/permissions/org.cyanogenmod.appsuggest.xml \
-    vendor/cm/config/permissions/org.cyanogenmod.audio.xml:system/etc/permissions/org.cyanogenmod.audio.xml \
-    vendor/cm/config/permissions/org.cyanogenmod.livedisplay.xml:system/etc/permissions/org.cyanogenmod.livedisplay.xml \
-    vendor/cm/config/permissions/org.cyanogenmod.livelockscreen.xml:system/etc/permissions/org.cyanogenmod.livelockscreen.xml \
-    vendor/cm/config/permissions/org.cyanogenmod.partner.xml:system/etc/permissions/org.cyanogenmod.partner.xml \
-    vendor/cm/config/permissions/org.cyanogenmod.performance.xml:system/etc/permissions/org.cyanogenmod.performance.xml \
-    vendor/cm/config/permissions/org.cyanogenmod.profiles.xml:system/etc/permissions/org.cyanogenmod.profiles.xml \
-    vendor/cm/config/permissions/org.cyanogenmod.statusbar.xml:system/etc/permissions/org.cyanogenmod.statusbar.xml \
-    vendor/cm/config/permissions/org.cyanogenmod.telephony.xml:system/etc/permissions/org.cyanogenmod.telephony.xml \
-    vendor/cm/config/permissions/org.cyanogenmod.theme.xml:system/etc/permissions/org.cyanogenmod.theme.xml \
-    vendor/cm/config/permissions/org.cyanogenmod.weather.xml:system/etc/permissions/org.cyanogenmod.weather.xml
+    vendor/OneUI/config/permissions/org.oneui.appsuggest.xml:system/etc/permissions/org.oneui.appsuggest.xml \
+    vendor/OneUI/config/permissions/org.oneui.audio.xml:system/etc/permissions/org.oneui.audio.xml \
+    vendor/OneUI/config/permissions/org.oneui.livedisplay.xml:system/etc/permissions/org.oneui.livedisplay.xml \
+    vendor/OneUI/config/permissions/org.oneui.livelockscreen.xml:system/etc/permissions/org.oneui.livelockscreen.xml \
+    vendor/OneUI/config/permissions/org.oneui.partner.xml:system/etc/permissions/org.oneui.partner.xml \
+    vendor/OneUI/config/permissions/org.oneui.performance.xml:system/etc/permissions/org.oneui.performance.xml \
+    vendor/OneUI/config/permissions/org.oneui.profiles.xml:system/etc/permissions/org.oneui.profiles.xml \
+    vendor/OneUI/config/permissions/org.oneui.statusbar.xml:system/etc/permissions/org.oneui.statusbar.xml \
+    vendor/OneUI/config/permissions/org.oneui.telephony.xml:system/etc/permissions/org.oneui.telephony.xml \
+    vendor/OneUI/config/permissions/org.oneui.theme.xml:system/etc/permissions/org.oneui.theme.xml \
+    vendor/OneUI/config/permissions/org.oneui.weather.xml:system/etc/permissions/org.oneui.weather.xml
 
-# CM Platform Library
+# OneUI Platform Library
 PRODUCT_PACKAGES += \
     org.cyanogenmod.platform-res \
     org.cyanogenmod.platform \
     org.cyanogenmod.platform.xml
 
-# CM Hardware Abstraction Framework
+# OneUI Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
     org.cyanogenmod.hardware.xml
@@ -44,11 +44,11 @@ ifndef CM_PLATFORM_REV
   CM_PLATFORM_REV := 0
 endif
 
-# CyanogenMod Platform SDK Version
+# oneui Platform SDK Version
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.build.version.plat.sdk=$(CM_PLATFORM_SDK_VERSION)
 
-# CyanogenMod Platform Internal
+# oneui Platform Internal
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.build.version.plat.rev=$(CM_PLATFORM_REV)
 

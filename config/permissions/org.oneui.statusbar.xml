@@ -15,6 +15,9 @@
 -->
 
 <permissions>
-    <feature name="org.cyanogenmod.livelockscreen" />
+    <!-- The feature listed here coincides with the CMStatusBarManagerService declared as
+         part of the external cm service init in SystemServer. If this xml isn't present
+         on the device, the service will not be published as a binder service!
+     -->
+    <feature name="org.oneui.statusbar" />
 </permissions>
-

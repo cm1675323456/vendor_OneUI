@@ -1,9 +1,9 @@
-# Inherit common CM stuff
-$(call inherit-product, vendor/cm/config/common_full.mk)
+# Inherit common OneUI stuff
+$(call inherit-product, vendor/OneUI/config/common_full.mk)
 
-# Required CM packages
+# Required OneUI packages
 PRODUCT_PACKAGES += \
     LatinIME
 
-# Include CM LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
+# Include OneUI LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/OneUI/overlay/dictionaries
