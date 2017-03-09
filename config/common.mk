@@ -217,13 +217,8 @@ PRODUCT_BOOT_JARS += \
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_PACKAGES += \
     procmem \
-    procrank
-
-# Conditionally build in su
-ifeq ($(WITH_SU),true)
-PRODUCT_PACKAGES += \
+    procrank \
     su
-endif
 endif
 
 DEVICE_PACKAGE_OVERLAYS += vendor/OneUI/overlay/common
