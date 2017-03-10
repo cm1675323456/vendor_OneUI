@@ -29,7 +29,7 @@ $(TARGET_GENERATED_BOOTANIMATION):
 
 ifeq ($(TARGET_BOOTANIMATION),)
     TARGET_BOOTANIMATION := $(TARGET_GENERATED_BOOTANIMATION)
-    ifeq ($(shell command -v mogrify),)
+    ifeq ($(shell command -v convert),)
         $(info **********************************************)
         $(info The boot animation could not be generated as)
         $(info ImageMagick is not installed in your system.)
