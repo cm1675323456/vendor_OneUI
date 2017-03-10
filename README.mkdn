@@ -92,22 +92,22 @@ Alright, so now we’re getting there. I have outlined the basics of what we’r
 
 Congratulations on the succesfull build initialization! Now, we shall go ahead and prepare to build for your device!
 
-##### Preparing Resurrection ONEUI ROM for devices
+##### Preparing ONEUI ROM for devices
 - Follow the AOSP Porting Instructions stated here to prepare the proprietary files for building for your device: (http://xda-university.com/as-a-developer/porting-aosp-roms-using-source-code)
 
 ##### Setting Up CCache
-- CCache is a method of utilizing a specified storage space to speed up building. It can be referred to as the same caching your android device does to speed up application and system boot times. In this case, CCache will help build Resurrection Remix faster than standard build times (Able to cut-down 50% of time taken to build).
+- CCache is a method of utilizing a specified storage space to speed up building. It can be referred to as the same caching your android device does to speed up application and system boot times. In this case, CCache will help build One UI faster than standard build times (Able to cut-down 50% of time taken to build).
 - To set up CCache, follow the following:
 
 
         $ echo "export USE_CCACHE=1" >> ~/.bashrc
       
-        $ ~/RR/prebuilts/misc/linux-x86/ccache/ccache -M 50G
+        $ ~/OneUI/prebuilts/misc/linux-x86/ccache/ccache -M 50G
 
      -M 50G
 The number before the letter G at the end specifies the amount of space CCache can use in your storage unit. As such, ensure that not too much of space is specified as this might result in unexpected errors although, the more storage you have, its recommended to have more CCache as it will increase the build times. Most efficient build systems are able to utilize CCache to about 120G or more.
 
-##### To build Resurrection ONEUI ROM
+##### To build ONEUI ROM
 
       $ cd ~/OneUI
       $ . build/envsetup.sh && brunch <device>
@@ -127,4 +127,4 @@ After doing so, redo everything stated from the Building Section.
 
 ##### For those who successfully built ONE UI
 
-Well, Congratulations on your victory! Now, you have a .zip file that flashable to your device! Share it to the internet as you wish but be sure to contribute back and also give credits to the Resurrection Remix Team and its contributors!Also keep in mind that if an official build exists for a device, no unofficial builds should be released publicly. Do come and build Resurrection Remix another time as source code is routinely being improved upon. If you wish to contibute, feel free to make a pull request to the One UI Team! See you again builder!Note:If you decide to create a thread on xda, please limit the thread to only one per device.more than one thread will not be allowed per device as it creates confusion amongst users and makes it hard for us to track bug reports.If you have unofficial builds, post them up on g+ so users can use and report issues in the post itself.
+Well, Congratulations on your victory! Now, you have a .zip file that flashable to your device! Share it to the internet as you wish but be sure to contribute back and also give credits to the One UI Team and its contributors!Also keep in mind that if an official build exists for a device, no unofficial builds should be released publicly. Do come and build One UI another time as source code is routinely being improved upon. If you wish to contribute, feel free to make a pull request to the One UI Team! See you again builder!Note:If you decide to create a thread on xda, please limit the thread to only one per device.more than one thread will not be allowed per device as it creates confusion amongst users and makes it hard for us to track bug reports.If you have unofficial builds, post them up on g+ so users can use and report issues in the post itself.
