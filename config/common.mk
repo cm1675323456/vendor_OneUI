@@ -84,17 +84,10 @@ PRODUCT_COPY_FILES += \
 # Include ONEUI audio files
 include vendor/OneUI/config/oneui_audio.mk
 
-# Theme engine
-include vendor/OneUI/config/themes_common.mk
-
 ifneq ($(TARGET_DISABLE_CMSDK), true)
 # CMSDK
 include vendor/OneUI/config/cmsdk_common.mk
 endif
-
-# Bootanimation
-PRODUCT_PACKAGES += \
-    bootanimation.zip
 
 # Required ONEUI packages
 PRODUCT_PACKAGES += \
@@ -108,7 +101,6 @@ PRODUCT_PACKAGES += \
 # Optional ONEUI packages
 PRODUCT_PACKAGES += \
     libemoji \
-    LiveWallpapersPicker \
     PhotoTable 
 
 # Include explicitly to work around GMS issues
@@ -120,7 +112,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AudioFX \
     CMSettingsProvider \
-    LineageSetupWizard \
     Eleven \
     ExactCalculator \
     LiveLockScreenService \
@@ -346,5 +337,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/OneUI/config/partner_gms.mk
 -include vendor/cyngn/product.mk
+
+# Include ONEUI Special Makefile
+include vendor/OneUI/config/oneui.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
