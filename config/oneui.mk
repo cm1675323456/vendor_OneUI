@@ -3,7 +3,8 @@
 # Required ONEUI packages
 PRODUCT_PACKAGES += \
 OneUISetupWizard \
-OneUIWallpapers
+OneUIWallpapers \
+Music
 
 # This is ONEUI!
 PRODUCT_COPY_FILES += \
